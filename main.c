@@ -16,7 +16,7 @@ void listar_produtos(Produto lista[], int total) {
     printf("\n--- Produtos Cadastrados ---\n");
     for (int i = 0; i < total; i++) {
         // BUG: esqueceram de imprimir o ID e a quebra de linha está inadequada
-    printf("ID: %s | Codigo Barras: %s | Nome: %s | Preco: R$ %.2f | Qtd: %d", lista[i].id, lista[i].codigo_barrras, lista[i].nome, lista[i].preco, lista[i].quantidade);
+    printf("ID: %s | Codigo Barras: %s | Categoria: %s | Nome: %s | Preco: R$ %.2f | Qtd: %d", lista[i].id, lista[i].codigo_barrras, lista.[i].categoria, lista[i].nome, lista[i].preco, lista[i].quantidade);
     }
 }
 
@@ -34,12 +34,14 @@ int main(void) {
 
     estoque[0].id = 1;
     estoque[0].codigo_barras = "7890001";
+    estoque[0].categoria = "Papelaria";
     strcpy(estoque[0].nome, "Caderno");
     estoque[0].preco = 15.50;
     estoque[0].quantidade = 10;
 
     estoque[1].id = 2;
     estoque[1].codigo_barras = "7890002"
+    estoque[1].categoira = "Escritorio";
     strcpy(estoque[1].nome, "Caneta");
     estoque[1].preco = 3.00;
     estoque[1].quantidade = 50;
