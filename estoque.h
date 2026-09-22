@@ -7,8 +7,7 @@
 
 typedef struct {
     int id;
-    char codigo_barra[20];
-    char codigo_barras[20]
+    char codigo_barras[20];
     char nome[30];
     float preco;
     int quantidade;
